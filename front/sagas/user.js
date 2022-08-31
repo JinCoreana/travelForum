@@ -24,6 +24,7 @@ function logInAPI(data) {
 
 function* logIn(action) {
   try {
+    console.log("login");
     const result = yield call(logInAPI, action.data);
     console.log(result);
     yield put({
@@ -40,11 +41,13 @@ function* logIn(action) {
 }
 
 function logOutAPI() {
+  console.log("logout1");
   return axios.post("/user/logout");
 }
 
 function* logOut() {
   try {
+    console.log("logout2");
     yield call(logOutAPI);
     yield put({
       type: LOG_OUT_SUCCESS,
@@ -132,11 +135,12 @@ function* watchUnfollow() {
 }
 
 function* watchLogIn() {
+  console.log("login");
   yield takeLatest(LOG_IN_REQUEST, logIn);
 }
 
 function* watchLogOut() {
-  console.log("logout");
+  console.log("logout3");
   yield takeLatest(LOG_OUT_REQUEST, logOut);
 }
 

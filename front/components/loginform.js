@@ -52,7 +52,7 @@ const LogInForm = () => {
         htmlFor="user-email"
         rules={[{ required: true, message: "Please input your email!" }]}
       >
-        <Input />
+        <Input autoComplete="on" />
       </Form.Item>
       <Form.Item
         label="Password"
@@ -62,7 +62,7 @@ const LogInForm = () => {
         onChange={onChangePassword}
         rules={[{ required: true, message: "Please input your password!" }]}
       >
-        <Input.Password />
+        <Input.Password autoComplete="on" />
       </Form.Item>
 
       <Form.Item
@@ -82,7 +82,7 @@ const LogInForm = () => {
         </Button>
         <Link href="/signup">
           <a>
-            <Button style={btnstyle}>Sing Up</Button>
+            <Button style={btnstyle}>Sign Up</Button>
           </a>
         </Link>
       </Form.Item>

@@ -108,7 +108,6 @@ const reducer = (state = initialState, action) =>
         draft.me = null;
         draft.logOutLoading = false;
         draft.logOutDone = true;
-
         break;
       case LOG_OUT_FAILURE:
         draft.logOutLoading = false;

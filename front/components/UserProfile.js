@@ -42,7 +42,7 @@ const UserProfile = () => {
     dispatch({ type: LOG_OUT_REQUEST });
   }, []);
   return (
-    <>
+    <div>
       <ProfileCard
         hoverable="true"
         cover={
@@ -97,7 +97,7 @@ const UserProfile = () => {
           Log Out
         </LogOutBtn>
       </ProfileCard>
-    </>
+    </div>
   );
 };
 
