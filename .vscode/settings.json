@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "vscode-icons",
+    "typescript.check.tscVersion": false,
+    "vsicons.projectDetection.disableDetect": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "eslint.autoFixOnSave": true,
+    "tslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
